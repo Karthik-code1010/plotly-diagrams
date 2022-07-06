@@ -1,0 +1,54 @@
+<mat-toolbar color="primary" class="mat-elevation-z5">
+  <mat-toolbar-row>
+      <button  (click)="toggleNav(sidenav)" type="button" aria-label="Toggle sidenav" mat-icon-button>
+      <mat-icon aria-hidden="false" aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <span class="fill-remaining-space"></span>
+    <button mat-icon-button>
+      <mat-icon class="vap-icon" aria-hidden="false" aria-label="settings">settings</mat-icon>
+
+    </button>
+    <button mat-icon-button>
+      <mat-icon class="vap-icon" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode='side' opened class="vertical-menu">
+    <mat-nav-list style="width: 70px;" class="icn_log">
+      <br>
+      <a mat-list-item routerLink="plotly-diagram" > 
+        <mat-icon class="icon-display">account_balance</mat-icon>&nbsp;
+      </a>
+      <br>
+      <a mat-list-item routerLink="modeling-diagram"> 
+        <mat-icon class="icon-display">model_training</mat-icon>&nbsp;
+      </a>
+      <a mat-list-item routerLink="basic-heatmap"> 
+        <mat-icon class="icon-display">map</mat-icon>&nbsp;
+      </a>
+      <a mat-list-item routerLink="bar-chart"> 
+        <mat-icon class="icon-display">bar_chart</mat-icon>&nbsp;
+      </a>
+      <a mat-list-item routerLink="scatter_plot"> 
+        <mat-icon class="icon-display">scatter_plot</mat-icon>&nbsp;
+      </a>  
+      <a mat-list-item routerLink="scatter_threshold"> 
+        <mat-icon class="icon-display">data_thresholding</mat-icon>&nbsp;
+      </a> 
+    
+     
+    </mat-nav-list>
+
+  </mat-sidenav>
+<mat-sidenav-content>
+   <!-- <div [@routeAnimations]="getRouteAnimationData()" style="height: 85vh;">
+      <router-outlet></router-outlet>
+   </div> -->
+   <div [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''" style="height: 85vh;">
+    <router-outlet #o="outlet"></router-outlet>
+   </div>
+</mat-sidenav-content>
+
+</mat-sidenav-container>
