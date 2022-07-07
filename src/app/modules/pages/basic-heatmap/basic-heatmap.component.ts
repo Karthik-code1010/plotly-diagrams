@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 var Plotly:any = require('plotly.js-dist');
 
 @Component({
@@ -8,30 +8,63 @@ var Plotly:any = require('plotly.js-dist');
 })
 export class BasicHeatmapComponent implements OnInit {
 
-  heatmap:any = {
-    "zvalues1":{
-      "val1":1,
-      "val2":20
-    },
-    "zvalues2":{
-      "val1":20,
-      "val2":1
-    }
-  }
+  @Input() data!: any;
   constructor() { }
 
   ngOnInit(): void {
+    console.log('heatmap data===>',this.data)
     this.basicHeatMap();
   }
   basicHeatMap(){
     var data = [
       {
-        z: [[this.heatmap.zvalues1.val1, this.heatmap.zvalues1.val2], [this.heatmap.zvalues2.val1, this.heatmap.zvalues2.val2]],
-        type: 'heatmap'
+        z: [[this.data.zvalues1.val1, this.data.zvalues1.val2], [this.data.zvalues2.val1, this.data.zvalues2.val2]],
+        text: [[this.data.zvalues1.val1, this.data.zvalues1.val2], [this.data.zvalues2.val1, this.data.zvalues2.val2]],
+        // font: {
+        //   family: 'Arial',
+        //   size: 12,
+        //   color: 'white'
+        // },
+        font: {
+          color: "white"
+        },
+        type: 'heatmap',
+        //colorscale: [[0, 'rgb(172,218,204)'], [1, 'rgb(17,61,111)'], [2, 'rgb(178,223,138)'], [3, 'rgb(51,160,44)'],]
+        colorscale: 'YlGnBu',
+      
+        
       }
     ];
+    var layout = {
+      title:this.data.layout.title,
+     
+      xaxis: {
+         
+        title:this.data.layout.xaxis.title,
+        autorange: true,
+        showgrid: false,
+        zeroline: false,
+        showline: false,
+        autotick: true,
+        ticks: '',
+        showticklabels: false
+      },
+      yaxis: {
+        
+       title:this.data.layout.yaxis.title,
+        autorange: true,
+        showgrid: false,
+        zeroline: false,
+        showline: false,
+        autotick: true,
+        ticks: '',
+        showticklabels: false
+      }
+      
     
-    Plotly.newPlot('myDiv2', data);
+    };
+    
+    Plotly.newPlot('myDiv2', data,layout);
 
   }
 

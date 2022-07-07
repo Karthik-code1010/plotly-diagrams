@@ -8,121 +8,193 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class FeatureButtonComponent implements OnInit {
   featureArray:any = 
   {
-  "title":"Feature selection using Logistic Regression",
-  "style":{
+ 
+  "layout":{
+    "title":"Feature selection using Logistic Regression",
     "fontfamily":"Raleway, sans-serif",
     "showlegend":false,
-    "tickangle": -45,
+    "bargap":0.05,
+    "width":1000,
+    "height":500,
+    "margin": {
+      "l": 200,
+      "r": 50,
+      "b": 100,
+      "t": 100,
+      "pad": 4
+    },
+    "xaxis": {
+        
+      "title": 'Importance',
+      "tickangle":0,
+      "tickmode": 'array',
+      "automargin": true,
+      "titlefont": { "size":20 },
+  
+  },
+  "yaxis": {
+    "title": 'Features',
+    
     "zeroline":false,
     "gridwidth":2,
-    "bargap":0.05,
-    "markerColor":"rgb(15, 1, 253)"
+  
+    //ticks: 'inside',
+      "tickangle":0,
+      "tickmode": "array",
+      "automargin": true,
+      "titlefont": { "size":20 },
   },
-  "features":["compet_occupancy","loyalty_pct","location_type",],
-  "importance":[1.0000,0.2124,0.1465],
-  // "values" : [
-  //   {
-  //     "Features": "compet_occupancy",
-  //     "Importance": 1.0000
-  // },
-  // {
-  //     "Features": "loyalty_pct",
-  //     "Importance": 0.2124
-  // },
-  // {
-  //   "Features": "location_type",
-  //   "Importance": 0.1465
-  // },
-  // ]
+  },
+  "style":{
+    "orientation" :"h",
+    "markerColor":"rgb(111, 147, 200)"
+  },
+  "features":["location_type","loyalty_pct","compet_occupancy"],
+  "importance":[0.1465,0.2124,1.0000,],
+ 
 }
 featureArray2:any = 
 {
-"title":"Feature selection using PLS",
-"style":{
-  "fontfamily":"Raleway, sans-serif",
-  "showlegend":false,
-  "tickangle": -45,
-  "zeroline":false,
-  "gridwidth":2,
-  "bargap":0.05,
-  "markerColor":"rgb(128, 190, 223)"
-},
-"features":["compet_occupancy","location_type","avgdailyrate",],
-"importance":[1.0000,0.1537,0.1361],
-// "values" :[
-//   {
-//       "Features": "compet_occupancy",
-//       "Importance": 1.0000
-//   },
-//   {
-//       "Features": "location_type",
-//       "Importance": 0.1537
-//   },
-//   {
-//     "Features": "avgdailyrate",
-//     "Importance": 0.1361
-// },
-// ]
+
+  "layout":{
+    "title":"Feature selection using PLS",
+    "fontfamily":"Raleway, sans-serif",
+    "showlegend":false,
+    "bargap":0.05,
+    "width":1000,
+    "height":500,
+    "margin": {
+      "l": 200,
+      "r": 50,
+      "b": 100,
+      "t": 100,
+      "pad": 4
+    },
+    "xaxis": {
+        
+      "title": 'Importance',
+      "tickangle":0,
+      "tickmode": 'array',
+      "automargin": true,
+      "titlefont": { "size":20 },
+  
+  },
+  "yaxis": {
+    "title": 'Features',
+    
+    "zeroline":false,
+    "gridwidth":2,
+  
+    //ticks: 'inside',
+      "tickangle":0,
+      "tickmode": "array",
+      "automargin": true,
+      "titlefont": { "size":20 },
+  },
+  },
+  "style":{
+    "orientation" :"h",
+    "markerColor":"rgb(111, 147, 200)"
+  },
+"features":["avgdailyrate","location_type","compet_occupancy"],
+"importance":[0.1361,0.1537,1.0000,],
+
 }
 
 featureArray3:any = 
 {
-"title":"Feature selection using Random Forest",
-"style":{
-  "fontfamily":"Raleway, sans-serif",
-  "showlegend":false,
-  "tickangle": -45,
-  "zeroline":false,
-  "gridwidth":2,
-  "bargap":0.05,
-  "markerColor":"rgb(10, 13, 223)"
-},
-"features":["compet_occupancy","loyalty_pct","avgdailyrate",],
-"importance":[1.0000,0.2380,0.1852],
-// "values" :[
-//   {
-//       "Features": "compet_occupancy",
-//       "Importance": 1.0000
-//   },
-//   {
-//       "Features": "loyalty_pct",
-//       "Importance": 0.2380
-//   },
-//   {
-//     "Features": "avgdailyrate",
-//     "Importance": 0.1852
-// },
-// ]
+
+  "layout":{
+    "title":"Feature selection using Random Forest",
+    "fontfamily":"Raleway, sans-serif",
+    "showlegend":false,
+    "bargap":0.05,
+    "width":1000,
+    "height":500,
+    "margin": {
+      "l": 200,
+      "r": 50,
+      "b": 100,
+      "t": 100,
+      "pad": 4
+    },
+    "xaxis": {
+        
+      "title": 'Importance',
+      "tickangle":0,
+      "tickmode": 'array',
+      "automargin": true,
+      "titlefont": { "size":20 },
+  
+  },
+  "yaxis": {
+    "title": 'Features',
+    
+    "zeroline":false,
+    "gridwidth":2,
+  
+    //ticks: 'inside',
+      "tickangle":0,
+      "tickmode": "array",
+      "automargin": true,
+      "titlefont": { "size":20 },
+  },
+  },
+  "style":{
+    "orientation" :"h",
+    "markerColor":"rgb(111, 147, 200)"
+  },
+"features":["avgdailyrate","loyalty_pct","compet_occupancy",],
+"importance":[0.1852,0.2380,1.0000],
+
 }
 featureArray4:any = 
 {
-"title":"Feature selection using XGBoost",
-"style":{
-  "fontfamily":"Raleway, sans-serif",
-  "showlegend":false,
-  "tickangle": 0,
-  "zeroline":false,
-  "gridwidth":2,
-  "bargap":0.05,
-  "markerColor":"rgb(143, 138, 223)"
-},
-"features":["compet_occupancy","loyalty_pct","max_rooms_capacity",],
-"importance":[1.0000,0.0128,0.0062],
 
-// "values" :[
-//   {
-//       "Features": "compet_occupancy",
-//       "Importance": 1.0000
-//   },
-//   {
-//       "Features": "loyalty_pct",
-//       "Importance": 0.0128
-//   },
-//   {
-//     "Features": "max_rooms_capacity",
-//     "Importance": 0.0062
-// },
-// ]
+  "layout":{
+    "title":"Feature selection using XGBoost",
+    "fontfamily":"Raleway, sans-serif",
+    "showlegend":false,
+    "bargap":0.05,
+    "width":1000,
+    "height":500,
+    "margin": {
+      "l": 200,
+      "r": 50,
+      "b": 100,
+      "t": 100,
+      "pad": 4
+    },
+    "xaxis": {
+        
+      "title": 'Importance',
+      "tickangle":0,
+      "tickmode": 'array',
+      "automargin": true,
+      "titlefont": { "size":20 },
+  
+  },
+  "yaxis": {
+    "title": 'Features',
+    
+    "zeroline":false,
+    "gridwidth":2,
+  
+    //ticks: 'inside',
+      "tickangle":0,
+      "tickmode": "array",
+      "automargin": true,
+      "titlefont": { "size":20 },
+  },
+  },
+  "style":{
+    "orientation" :"h",
+    "markerColor":"rgb(111, 147, 200)"
+  },
+"features":["max_rooms_capacity","loyalty_pct","compet_occupancy",],
+"importance":[0.0062,0.0128,1.0000,],
+
+
 }
  
  
@@ -130,7 +202,7 @@ featureArray4:any =
  
   data: any[] = [];
   constructor() { 
-     this.data = this.featureArray2
+     this.data = this.featureArray3
   }
 
   ngOnInit(): void {

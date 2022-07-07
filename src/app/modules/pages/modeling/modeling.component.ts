@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 var Plotly:any = require('plotly.js-dist');
 
 @Component({
@@ -8,60 +8,58 @@ var Plotly:any = require('plotly.js-dist');
 })
 export class ModelingComponent implements OnInit {
 
-  histoData:any = {
-    "start":1,
-    "end":500,
-    "addValue1":1,
-    "addValue2":1.1,
-    "trace1":{
-      "opacity":0.5,
-      "markerColor":"green",
-    },
-    "trace2":{
-      "opacity":0.6,
-      "markerColor":"red",
-    },
-    "layout":{
-      "barmode":"overlay"
-    }
-
-  }
+ 
+  
+@Input() data!: any;
 
   constructor() { }
 
   ngOnInit(): void {
-
+console.log('component data ==>>>>>>',this.data);
     this.histogram();
   }
   histogram(){
-    console.log(this.histoData)
+    console.log(this.data)
     var x1 = [];
     var x2 = [];
-    for (var i = this.histoData.start; i < this.histoData.end; i++)
+    for (var i = this.data.start; i < this.data.end; i++)
     {
      var k = Math.random();
-      x1.push(Math.random() + this.histoData.addValue1);
-      x2.push(Math.random() + this.histoData.addValue2);
+      x1.push(Math.random() + this.data.addValue1);
+      x2.push(Math.random() + this.data.addValue2);
     }
     var trace1 = {
       x: x1,
       type: "histogram",
-      opacity: this.histoData.trace1.opacity,
+      name:this.data.trace1.name,
+      opacity: this.data.trace1.opacity,
       marker: {
-         color:this.histoData.trace1.markerColor,
+         color:this.data.trace1.markerColor,
       },
     };
     var trace2 = {
       x: x2,
       type: "histogram",
-      opacity:  this.histoData.trace2.opacity,
+      name:this.data.trace2.name,
+      opacity:  this.data.trace2.opacity,
       marker: {
-         color: this.histoData.trace2.markerColor,
+         color: this.data.trace2.markerColor,
       },
     };
     
     var data = [trace1, trace2];
-    var layout = {barmode:this.histoData.layout.barmode,};
+    var layout = {
+      title:this.data.layout.title,
+      barmode:this.data.layout.barmode,
+      yaxis:{
+       //range: [0,4]
+       title:this.data.layout.yaxis.title,
+      },
+      xaxis:{
+        //range: [0,1]
+        title:this.data.layout.xaxis.title,
+       }
+    };
     Plotly.newPlot('myDiv1', data, layout);
     
   }

@@ -44,35 +44,44 @@ export class PlotlydiagramComponent implements OnInit {
        // text: ["4.17 below the mean", "4.17 below the mean", "0.17 below the mean", ],
         marker: {color: this.data.style.markerColor},
         type: "bar",
-        orientation :"h",
+        orientation :this.data.style.orientation,
       }
     ];
     var layout = {
-      title: this.data.title,
-      font: {family: this.data.style.fontfamily},
-      showlegend: this.data.style.showlegend,
+      title: this.data.layout.title,
+      font: {family: this.data.layout.fontfamily},
+      showlegend: this.data.layout.showlegend,
+      width:this.data.layout.width,
+      height: this.data.layout.height,
+      margin: {
+        l: this.data.layout.margin.l,
+        r: this.data.layout.margin.r,
+        b: this.data.layout.margin.b,
+        t: this.data.layout.margin.t,
+        pad: this.data.layout.margin.pad,
+      },
      
       xaxis: {
-       // tickwidth:'100'
-        //ticklen:"array",
-       // automargin:true,
-       // tickangle:-45,
-        //ticks: 'inside',
-      //side: 'top'
+        
+        title:  this.data.layout.xaxis.title,
+        tickangle:this.data.layout.xaxis.tickangle,
+        tickmode: this.data.layout.xaxis.tickmode,
+        automargin: this.data.layout.xaxis.automargin,
+        titlefont: { size:this.data.layout.xaxis.titlefont.size, },
+    
     },
       yaxis: {
-        zeroline: this.data.style.zeroline,
-        gridwidth: this.data.style.gridwidth,
-        // tickwidth:'100'
-        ticksuffix: '',
-         ticklen:"array",
-        width: 500,
-        height: 500,
-        autosize: false,
+        title: this.data.layout.yaxis.title,
+        zeroline: this.data.layout.yaxis.zeroline,
+        gridwidth: this.data.layout.yaxis.gridwidth,
+      
         //ticks: 'inside',
-          tickangle:-70,
+          tickangle:this.data.layout.yaxis.tickangle,
+          tickmode:this.data.layout.yaxis.tickmode,
+          automargin: this.data.layout.yaxis.automargin,
+          titlefont: { size: this.data.layout.yaxis.titlefont.size, },
       },
-      bargap: this.data.style.bargap,
+      bargap: this.data.layout.bargap,
     
   
     };
