@@ -10,12 +10,12 @@ export class BasicHeatmapDataComponent implements OnInit {
 
   heatmap:any = {
     "zvalues1":{
-      "val1":53,
-      "val2":157
-    },
-    "zvalues2":{
       "val1":267,
       "val2":90
+    },
+    "zvalues2":{
+      "val1":53,
+      "val2":157
     },
    "layout" :{
       "title":"Confusion Matrix",

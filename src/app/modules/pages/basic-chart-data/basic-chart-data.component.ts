@@ -9,15 +9,15 @@ export class BasicChartDataComponent implements OnInit {
   barmap:any = {
  
     "layout" : {
-      "title":"2013 Sales Report",
+      "title":"",
     
       "yaxis":{
      
-       "title":"Reference ",
+       "title":"Model",
       },
       "xaxis":{
         "tickangle": 0,
-        "title":"Predicted",
+        "title":"Error matrics",
         //side: "top"
        },
        "barmode": "group",
@@ -25,22 +25,24 @@ export class BasicChartDataComponent implements OnInit {
     },
     
     "trace1":{
-      "name":"Primary Product",
-      "color":"rgb(49,130,189)",
+      "name":"Training",
+      "color":"rgb(100, 149, 237)",
       "opacity": 0.7,
-      "xvalue":[20,14,25,16,18,22,19,15,12,16,14,17],
-      "yvalue":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+      "xvalue":[19,14,22,14,16,19,15,14],
+      "yvalue":["LogisticRegression_Baseline","XGBoost_Baseline","DecisionTree_Baseline","RandomForest_Baseline","SVM_Baseline","Ensemble_Stacked","Ensemble_Max_Voting","Ensemble_Wheited_Voting"],
     
       
     
 
     },
     "trace2":{
-      "name":"Secondary Product",
-      "color":"rgb(204,204,204)",
+      "name":"Validation",
+      "color":"rgb(0, 0, 255)",
       "opacity": 0.5,
-      "xvalue":[19,14,22,14,16,19,15,14,10,12,12,16],
-      "yvalue":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+    
+      "xvalue":[20,14,25,16,18,22,19,15],
+      "yvalue":["LogisticRegression_Baseline","XGBoost_Baseline","DecisionTree_Baseline","RandomForest_Baseline","SVM_Baseline","Ensemble_Stacked","Ensemble_Max_Voting","Ensemble_Wheited_Voting"],
+    
    
      
 

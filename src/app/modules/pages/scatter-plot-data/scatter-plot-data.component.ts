@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ScatterPlotDataComponent implements OnInit {
   scatterArray:any = {
     "trace1":{
-      "xvalue": [0.0,0.087,0.22,0.43,0.52,0.62,0.75,0.82,1],
-      "yvalue":[0,0.11,0.52,0.70,0.85,0.92,0.98,0.96,1],
+     "xvalue": [0,0.0612,0.0712,0.098,0.22,0.43,0.52,0.62,0.75,0.82,1],
+      "yvalue":[0,0.0589,0.0689,0.189,0.52,0.70,0.85,0.92,0.98,0.96,1],
       "showlegend":false,
       "name":"",
     },
@@ -21,9 +21,8 @@ export class ScatterPlotDataComponent implements OnInit {
       "line": {"dash":"dash","color":"navy"}
     },
     "trace3" : {
-      "xvalue": [0.0,0.087,0.22,0.43,0.52,0.62,0.75,0.82,1],
-      "yvalue": [0,0.11,0.52,0.70,0.85,0.92,0.98,0.96,1],
-   
+      "xvalue": [0,0.0612,0.0712,0.098,0.22,0.43,0.52,0.62,0.75,0.82,1],
+      "yvalue":[0,0.0589,0.0689,0.189,0.52,0.70,0.85,0.92,0.98,0.96,1],
       "fill":"tonexty",
       "line_color":"seagreen",
       "name": "AUC = %0.2f"

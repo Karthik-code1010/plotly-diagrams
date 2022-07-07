@@ -20,6 +20,7 @@ export class BasicHeatmapComponent implements OnInit {
       {
         z: [[this.data.zvalues1.val1, this.data.zvalues1.val2], [this.data.zvalues2.val1, this.data.zvalues2.val2]],
         text: [[this.data.zvalues1.val1, this.data.zvalues1.val2], [this.data.zvalues2.val1, this.data.zvalues2.val2]],
+        texttemplate:"%{text}",
         // font: {
         //   family: 'Arial',
         //   size: 12,
@@ -28,9 +29,10 @@ export class BasicHeatmapComponent implements OnInit {
         font: {
           color: "white"
         },
+        showarrow: false,
         type: 'heatmap',
-        //colorscale: [[0, 'rgb(172,218,204)'], [1, 'rgb(17,61,111)'], [2, 'rgb(178,223,138)'], [3, 'rgb(51,160,44)'],]
-        colorscale: 'YlGnBu',
+        //colorscale: [[53,157, 'rgb(172,218,204)'], [157,90, 'rgb(17,61,111)'],]
+       colorscale: 'YlGnBu',
       
         
       }
@@ -64,7 +66,8 @@ export class BasicHeatmapComponent implements OnInit {
     
     };
     
-    Plotly.newPlot('myDiv2', data,layout);
+    
+    Plotly.newPlot('myDiv2', data,layout,{showSendToCloud: true});
 
   }
 
