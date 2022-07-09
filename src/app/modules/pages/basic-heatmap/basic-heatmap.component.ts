@@ -32,8 +32,11 @@ export class BasicHeatmapComponent implements OnInit {
         showarrow: false,
         type: 'heatmap',
         //colorscale: [[53,157, 'rgb(172,218,204)'], [157,90, 'rgb(17,61,111)'],]
-       colorscale: 'YlGnBu',
-      
+      // colorscale: 'YlGnBu',
+      colorscale: [
+        [0, '#8cd9b3'],
+        [1, '#001f3f']
+      ],
         
       }
     ];

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { max, min } from 'rxjs';
 var Plotly:any = require('plotly.js-dist');
 @Component({
@@ -7,51 +7,8 @@ var Plotly:any = require('plotly.js-dist');
   styleUrls: ['./scatter-threshold.component.scss']
 })
 export class ScatterThresholdComponent implements OnInit {
-  scatterThresArray:any = {
-    "trace1": {
-      "x": [0, 0.12, 0.63, 0.74,0.86,1],
-      "y": [0.0234, 0.125, 0.64, 0.77,0.88,1],
-
-      "line": {
-        "color":"royalblue"
-      },
-      "name":"Specificity"
-     
-  },
-  "trace2": {
-    "x": [1, 0.89, 0.73, 0.6984,0],
-    "y": [0.00678, 0.145, 0.1078, 0.2278,1],
-    "line": {
-      "color":"green"},
-    "name":"Sensitivity"
-   },
-   "layout": {
-    "shapes": 
-      {
-        "type": "line",
-        "x0": 0.4,
-        "y0": 0,
-        "x1": 0.4,
-        "y1": 1,
-        "line": {
-          "color": "rgb(55, 128, 191)",
-          "width": 3,
-          "dash":"dash"
-        }
-      },
-    
-    "xaxis": {
-      "range": [0.1, 1],
-      "title": "Threshold"},
-    "yaxis": {
-      "range": [0, 1],
-       "title": "Sensitivity Vs Specificity"},
-       "title": "House Prices vs Size"
-}
-
-
-  }
-
+ 
+  @Input() data!: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -67,53 +24,56 @@ export class ScatterThresholdComponent implements OnInit {
   }
   scatterThreshold(){
     var trace1 = {
-      x: this.scatterThresArray.trace1.x,
-      y:  this.scatterThresArray.trace1.y,
+      x: this.data.trace1.x,
+      y:  this.data.trace1.y,
       type: 'scatter',
       mode: 'lines',
       line: {
-        color:this.scatterThresArray.trace1.line.color,
+        color:this.data.trace1.line.color,
       },
-      name:this.scatterThresArray.trace1.name,
+      name:this.data.trace1.name,
      
   };
   var trace2 = {
-    x: this.scatterThresArray.trace2.x,
-    y: this.scatterThresArray.trace2.y,
+    x: this.data.trace2.x,
+    y: this.data.trace2.y,
     type: 'scatter' ,
     line: {
-      color:this.scatterThresArray.trace2.line.color,
+      color:this.data.trace2.line.color,
     },
-    name:this.scatterThresArray.trace2.name,
+    name:this.data.trace2.name,
 };
   
   var layout = {
       shapes: [
         {
-          type: this.scatterThresArray.layout.shapes.type,
-          x0: this.scatterThresArray.layout.shapes.x0,
-          y0: this.scatterThresArray.layout.shapes.y0,
-          x1: this.scatterThresArray.layout.shapes.x1,
-          y1:this.scatterThresArray.layout.shapes.y1,
+          type: this.data.layout.shapes.type,
+          x0: this.data.layout.shapes.x0,
+          y0: this.data.layout.shapes.y0,
+          x1: this.data.layout.shapes.x1,
+          y1:this.data.layout.shapes.y1,
           line: {
-            color: this.scatterThresArray.layout.shapes.line.color,
-            width: this.scatterThresArray.layout.shapes.line.width,
-            dash:this.scatterThresArray.layout.shapes.line.dash,
+            color: this.data.layout.shapes.line.color,
+            width: this.data.layout.shapes.line.width,
+            dash:this.data.layout.shapes.line.dash,
           }
         },
       ],
       xaxis: {
-        range:this.scatterThresArray.layout.xaxis.range, 
-        title: this.scatterThresArray.layout.xaxis.title, 
+        range:this.data.layout.xaxis.range, 
+        title: this.data.layout.xaxis.title, 
       },
       yaxis: {
-        range: this.scatterThresArray.layout.yaxis.range, 
-        title: this.scatterThresArray.layout.yaxis.title, 
+        range: this.data.layout.yaxis.range, 
+        title: this.data.layout.yaxis.title, 
       },
-      title: this.scatterThresArray.layout.title
+      title: this.data.layout.title
   }
   Plotly.newPlot('scatterThresh',[trace1,trace2],layout);
   }
+
+
+  
   scatterThreshold2(){
     var xArray = [50,60,70,80,90,100,110,120,130,140,150];
 var yArray = [7,8,8,9,9,9,10,11,14,14,15];

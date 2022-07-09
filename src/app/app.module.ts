@@ -43,12 +43,15 @@ import { ModelingComponent } from './modules/pages/modeling/modeling.component';
 import { BasicHeatmapComponent } from './modules/pages/basic-heatmap/basic-heatmap.component';
 import { BarchartComponent } from './modules/pages/barchart/barchart.component';
 import { ScatterPlotComponent } from './modules/pages/scatter-plot/scatter-plot.component';
-import { ScatterThresholdComponent } from './scatter-threshold/scatter-threshold.component';
+import { ScatterThresholdComponent } from './modules/pages/scatter-threshold/scatter-threshold.component';
 import { FeatureButtonComponent } from './modules/pages/feature-button/feature-button.component';
 import { ModelingDataComponent } from './modules/pages/modeling-data/modeling-data.component';
 import { BasicHeatmapDataComponent } from './modules/pages/basic-heatmap-data/basic-heatmap-data.component';
 import { BasicChartDataComponent } from './modules/pages/basic-chart-data/basic-chart-data.component';
 import { ScatterPlotDataComponent } from './modules/pages/scatter-plot-data/scatter-plot-data.component';
+import { ScatterThresholdDataComponent } from './modules/pages/scatter-threshold-data/scatter-threshold-data.component';
+import { ClassbarComponent } from './modules/pages/classbar/classbar.component';
+import { DensityplotComponent } from './modules/pages/densityplot/densityplot.component';
 
 //import Plotly from 'plotly.js-dist';
 //var Plotly = require('plotly.js/lib/core');
@@ -74,6 +77,9 @@ import { ScatterPlotDataComponent } from './modules/pages/scatter-plot-data/scat
     BasicHeatmapDataComponent,
     BasicChartDataComponent,
     ScatterPlotDataComponent,
+    ScatterThresholdDataComponent,
+    ClassbarComponent,
+    DensityplotComponent,
 
 
 
