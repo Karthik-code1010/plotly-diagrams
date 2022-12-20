@@ -7,6 +7,7 @@ import { BasicHeatmapDataComponent } from './modules/pages/basic-heatmap-data/ba
 import { BasicHeatmapComponent } from './modules/pages/basic-heatmap/basic-heatmap.component';
 import { ClassbarComponent } from './modules/pages/classbar/classbar.component';
 import { DensityplotComponent } from './modules/pages/densityplot/densityplot.component';
+import { DensityplotdataComponent } from './modules/pages/densityplotdata/densityplotdata.component';
 import { FeatureButtonComponent } from './modules/pages/feature-button/feature-button.component';
 import { ModelingDataComponent } from './modules/pages/modeling-data/modeling-data.component';
 import { ModelingComponent } from './modules/pages/modeling/modeling.component';
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path:"class-bar", component: ClassbarComponent}, 
   //ClassbarComponent
   {path:"density-plot", component: DensityplotComponent}, //DensityplotComponent
+  {path:"density-plotdata", component: DensityplotdataComponent},  //DensityplotdataComponent
 
 ];
 

@@ -50,15 +50,15 @@ export class ScatterPlotComponent implements OnInit {
     var data = [trace1,trace2,trace3 ];
       
     var layout = {
-      title: "ROC",
+      title: this.data.layout.title,
     
       yaxis:{
      
-       title:"Sensitivity",
+       title:this.data.layout.yaxis.title,
       },
       xaxis:{
        // tickangle:  ,
-        title:"1-Specificity",
+        title:this.data.layout.xaxis.title,
         
        },
  

@@ -1,0 +1,312 @@
+[
+    {
+      "tpr_values": 0,
+      "fpr2_values": 1,
+      "thresholdroc_values": 1
+    },
+    {
+      "tpr_values": 0.015151515151515152,
+      "fpr2_values": 1,
+      "thresholdroc_values": 0.959027111530304
+    },
+    {
+      "tpr_values": 0.45454545454545453,
+      "fpr2_values": 1,
+      "thresholdroc_values": 0.8597225546836853
+    },
+    {
+      "tpr_values": 0.45454545454545453,
+      "fpr2_values": 0.9959677419354839,
+      "thresholdroc_values": 0.8545292019844055
+    },
+    {
+      "tpr_values": 0.5606060606060606,
+      "fpr2_values": 0.9959677419354839,
+      "thresholdroc_values": 0.8091380596160889
+    },
+    {
+      "tpr_values": 0.5606060606060606,
+      "fpr2_values": 0.9919354838709677,
+      "thresholdroc_values": 0.8048356771469116
+    },
+    {
+      "tpr_values": 0.6060606060606061,
+      "fpr2_values": 0.9919354838709677,
+      "thresholdroc_values": 0.7433117032051086
+    },
+    {
+      "tpr_values": 0.6060606060606061,
+      "fpr2_values": 0.9838709677419355,
+      "thresholdroc_values": 0.7255173921585083
+    },
+    {
+      "tpr_values": 0.6136363636363636,
+      "fpr2_values": 0.9838709677419355,
+      "thresholdroc_values": 0.7218424081802368
+    },
+    {
+      "tpr_values": 0.6136363636363636,
+      "fpr2_values": 0.9798387096774194,
+      "thresholdroc_values": 0.7125639915466309
+    },
+    {
+      "tpr_values": 0.6666666666666666,
+      "fpr2_values": 0.9798387096774194,
+      "thresholdroc_values": 0.6653280854225159
+    },
+    {
+      "tpr_values": 0.6666666666666666,
+      "fpr2_values": 0.9758064516129032,
+      "thresholdroc_values": 0.6542097330093384
+    },
+    {
+      "tpr_values": 0.6742424242424242,
+      "fpr2_values": 0.9758064516129032,
+      "thresholdroc_values": 0.6469065546989441
+    },
+    {
+      "tpr_values": 0.6742424242424242,
+      "fpr2_values": 0.9717741935483871,
+      "thresholdroc_values": 0.6458009481430054
+    },
+    {
+      "tpr_values": 0.696969696969697,
+      "fpr2_values": 0.9717741935483871,
+      "thresholdroc_values": 0.6302840709686279
+    },
+    {
+      "tpr_values": 0.696969696969697,
+      "fpr2_values": 0.9637096774193549,
+      "thresholdroc_values": 0.6011155247688293
+    },
+    {
+      "tpr_values": 0.7272727272727273,
+      "fpr2_values": 0.9637096774193549,
+      "thresholdroc_values": 0.5861437916755676
+    },
+    {
+      "tpr_values": 0.7272727272727273,
+      "fpr2_values": 0.9596774193548387,
+      "thresholdroc_values": 0.5825923681259155
+    },
+    {
+      "tpr_values": 0.7651515151515151,
+      "fpr2_values": 0.9596774193548387,
+      "thresholdroc_values": 0.5502138733863831
+    },
+    {
+      "tpr_values": 0.7651515151515151,
+      "fpr2_values": 0.9556451612903226,
+      "thresholdroc_values": 0.5432550311088562
+    },
+    {
+      "tpr_values": 0.7803030303030303,
+      "fpr2_values": 0.9556451612903226,
+      "thresholdroc_values": 0.5376409888267517
+    },
+    {
+      "tpr_values": 0.7803030303030303,
+      "fpr2_values": 0.9475806451612904,
+      "thresholdroc_values": 0.5298126935958862
+    },
+    {
+      "tpr_values": 0.8106060606060606,
+      "fpr2_values": 0.9475806451612904,
+      "thresholdroc_values": 0.5050279498100281
+    },
+    {
+      "tpr_values": 0.8106060606060606,
+      "fpr2_values": 0.939516129032258,
+      "thresholdroc_values": 0.4981364607810974
+    },
+    {
+      "tpr_values": 0.8181818181818182,
+      "fpr2_values": 0.939516129032258,
+      "thresholdroc_values": 0.48333436250686646
+    },
+    {
+      "tpr_values": 0.8181818181818182,
+      "fpr2_values": 0.9274193548387096,
+      "thresholdroc_values": 0.47136804461479187
+    },
+    {
+      "tpr_values": 0.8333333333333334,
+      "fpr2_values": 0.9274193548387096,
+      "thresholdroc_values": 0.4636461138725281
+    },
+    {
+      "tpr_values": 0.8333333333333334,
+      "fpr2_values": 0.9193548387096774,
+      "thresholdroc_values": 0.44908419251441956
+    },
+    {
+      "tpr_values": 0.8484848484848485,
+      "fpr2_values": 0.9193548387096774,
+      "thresholdroc_values": 0.4232257306575775
+    },
+    {
+      "tpr_values": 0.8484848484848485,
+      "fpr2_values": 0.9112903225806451,
+      "thresholdroc_values": 0.4214416742324829
+    },
+    {
+      "tpr_values": 0.8560606060606061,
+      "fpr2_values": 0.9112903225806451,
+      "thresholdroc_values": 0.42092135548591614
+    },
+    {
+      "tpr_values": 0.8560606060606061,
+      "fpr2_values": 0.8991935483870968,
+      "thresholdroc_values": 0.39768925309181213
+    },
+    {
+      "tpr_values": 0.8787878787878788,
+      "fpr2_values": 0.8991935483870968,
+      "thresholdroc_values": 0.3751494884490967
+    },
+    {
+      "tpr_values": 0.8787878787878788,
+      "fpr2_values": 0.8911290322580645,
+      "thresholdroc_values": 0.362722247838974
+    },
+    {
+      "tpr_values": 0.8939393939393939,
+      "fpr2_values": 0.8911290322580645,
+      "thresholdroc_values": 0.3500678837299347
+    },
+    {
+      "tpr_values": 0.8939393939393939,
+      "fpr2_values": 0.8790322580645161,
+      "thresholdroc_values": 0.3401203155517578
+    },
+    {
+      "tpr_values": 0.9015151515151515,
+      "fpr2_values": 0.8790322580645161,
+      "thresholdroc_values": 0.3300921320915222
+    },
+    {
+      "tpr_values": 0.9015151515151515,
+      "fpr2_values": 0.8709677419354839,
+      "thresholdroc_values": 0.3252042829990387
+    },
+    {
+      "tpr_values": 0.9090909090909091,
+      "fpr2_values": 0.8709677419354839,
+      "thresholdroc_values": 0.32171347737312317
+    },
+    {
+      "tpr_values": 0.9090909090909091,
+      "fpr2_values": 0.8629032258064516,
+      "thresholdroc_values": 0.31653350591659546
+    },
+    {
+      "tpr_values": 0.9166666666666666,
+      "fpr2_values": 0.8629032258064516,
+      "thresholdroc_values": 0.30976206064224243
+    },
+    {
+      "tpr_values": 0.9166666666666666,
+      "fpr2_values": 0.814516129032258,
+      "thresholdroc_values": 0.25815334916114807
+    },
+    {
+      "tpr_values": 0.9242424242424242,
+      "fpr2_values": 0.814516129032258,
+      "thresholdroc_values": 0.25803491473197937
+    },
+    {
+      "tpr_values": 0.9242424242424242,
+      "fpr2_values": 0.8064516129032258,
+      "thresholdroc_values": 0.2549448013305664
+    },
+    {
+      "tpr_values": 0.9318181818181818,
+      "fpr2_values": 0.8064516129032258,
+      "thresholdroc_values": 0.2544885575771332
+    },
+    {
+      "tpr_values": 0.9318181818181818,
+      "fpr2_values": 0.8024193548387097,
+      "thresholdroc_values": 0.25370779633522034
+    },
+    {
+      "tpr_values": 0.9393939393939394,
+      "fpr2_values": 0.8024193548387097,
+      "thresholdroc_values": 0.2492484450340271
+    },
+    {
+      "tpr_values": 0.9393939393939394,
+      "fpr2_values": 0.7862903225806451,
+      "thresholdroc_values": 0.2383268028497696
+    },
+    {
+      "tpr_values": 0.9545454545454546,
+      "fpr2_values": 0.7862903225806451,
+      "thresholdroc_values": 0.23663023114204407
+    },
+    {
+      "tpr_values": 0.9545454545454546,
+      "fpr2_values": 0.7701612903225806,
+      "thresholdroc_values": 0.22693262994289398
+    },
+    {
+      "tpr_values": 0.9621212121212122,
+      "fpr2_values": 0.7701612903225806,
+      "thresholdroc_values": 0.22371630370616913
+    },
+    {
+      "tpr_values": 0.9621212121212122,
+      "fpr2_values": 0.7540322580645161,
+      "thresholdroc_values": 0.2082936316728592
+    },
+    {
+      "tpr_values": 0.9696969696969697,
+      "fpr2_values": 0.7540322580645161,
+      "thresholdroc_values": 0.19703792035579681
+    },
+    {
+      "tpr_values": 0.9696969696969697,
+      "fpr2_values": 0.6653225806451613,
+      "thresholdroc_values": 0.14745929837226868
+    },
+    {
+      "tpr_values": 0.9772727272727273,
+      "fpr2_values": 0.6653225806451613,
+      "thresholdroc_values": 0.14413300156593323
+    },
+    {
+      "tpr_values": 0.9772727272727273,
+      "fpr2_values": 0.6048387096774194,
+      "thresholdroc_values": 0.1192733570933342
+    },
+    {
+      "tpr_values": 0.9848484848484849,
+      "fpr2_values": 0.6048387096774194,
+      "thresholdroc_values": 0.11915665119886398
+    },
+    {
+      "tpr_values": 0.9848484848484849,
+      "fpr2_values": 0.5887096774193548,
+      "thresholdroc_values": 0.116134412586689
+    },
+    {
+      "tpr_values": 0.9924242424242424,
+      "fpr2_values": 0.5887096774193548,
+      "thresholdroc_values": 0.11555929481983185
+    },
+    {
+      "tpr_values": 0.9924242424242424,
+      "fpr2_values": 0.5201612903225806,
+      "thresholdroc_values": 0.08469432592391968
+    },
+    {
+      "tpr_values": 1,
+      "fpr2_values": 0.5201612903225806,
+      "thresholdroc_values": 0.08469277620315552
+    },
+    {
+      "tpr_values": 1,
+      "fpr2_values": 0,
+      "thresholdroc_values": 0.016850221902132034
+    }
+  ]

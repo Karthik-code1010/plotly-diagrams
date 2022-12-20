@@ -60,3 +60,4 @@ export class BasicChartDataComponent implements OnInit {
   }
 
 }
+

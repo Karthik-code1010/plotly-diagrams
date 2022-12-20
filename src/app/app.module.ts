@@ -52,6 +52,8 @@ import { ScatterPlotDataComponent } from './modules/pages/scatter-plot-data/scat
 import { ScatterThresholdDataComponent } from './modules/pages/scatter-threshold-data/scatter-threshold-data.component';
 import { ClassbarComponent } from './modules/pages/classbar/classbar.component';
 import { DensityplotComponent } from './modules/pages/densityplot/densityplot.component';
+import { DensityplotdataComponent } from './modules/pages/densityplotdata/densityplotdata.component';
+
 
 //import Plotly from 'plotly.js-dist';
 //var Plotly = require('plotly.js/lib/core');
@@ -80,6 +82,8 @@ import { DensityplotComponent } from './modules/pages/densityplot/densityplot.co
     ScatterThresholdDataComponent,
     ClassbarComponent,
     DensityplotComponent,
+    DensityplotdataComponent,
+ 
 
 
 
